@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text & Text-to-Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Speech Converter</h1>
+    </header>
+
+    <main>
+        <button class="textToSpeech" onclick="selectMode('textToSpeech')">Text to Speech</button>
+        <button class="speechToText" onclick="selectMode('speechToText')">Speech to Text</button>
+
+        <div id="inputContainer">
+            <label for="textInput">Input:</label>
+            <br><br><input type="text" id="textInput" placeholder="Please enter text to convert to speech.">
+        </div>
+
+        <button id="actionBtn" onclick="performAction()">Start</button>
+        <button id="stopBtn" onclick="stopSpeechToText()">Stop</button>
+
+        <div id="output"></div>
+        <div id="error"></div>
+    </main>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
